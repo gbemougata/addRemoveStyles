@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title></title>
+
+    <style>
+      img {
+        width:400px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img src= "https://images-na.ssl-images-amazon.com/images/I/71nT1BOrvKL._AC_UL160_.jpg" class='sample-img' alt=''>
+    </div>
+  </body>
+  <script>
+  const laptop = document.querySelector('.sample-img');
+  laptop.addEventListener('mouseover', (e) => {
+    e.target.style.borderRight =' 10px red solid';
+  });
+laptop.addEventListener('mouseout', (e) => {
+  e.target.style.borderRight = '10px solid transparent';
+})
+
+  </script>
+  </html>
